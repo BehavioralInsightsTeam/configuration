@@ -37,7 +37,7 @@ run_ansible() {
 }
 
 # This DATE_TIME will be used as instance launch time tag
-TERMINATION_DATE_TIME=`date +"%m-%d-%Y %T" --date="-7 days ago"`
+TERMINATION_DATE_TIME=`date +"%m-%d-%Y %T" --date="-${sandbox_life} days ago"`
 
 if [[ -z $BUILD_USER ]]; then
     BUILD_USER=jenkins
