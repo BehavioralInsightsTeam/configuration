@@ -48,8 +48,6 @@
       rabbitmq_ip: 127.0.0.1
     - role: edxapp
       celery_worker: True
-    - analytics_api
-    - insights
     # not ready yet: - edx_notes_api
     - demo
     - oauth_client_setup
